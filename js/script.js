@@ -1,9 +1,4 @@
-function printMessage(msg){
-	var div = document.createElement('div');
-	div.innerHTML = msg;
-	document.getElementById('messages').appendChild(div);
-}
-
-function clearMessages(){
-	document.getElementById('messages').innerHTML = '';
-}
+var computerMove, PlayerMove;
+PlayerMove = 'papier';
+computerMove = 'kamień';
+printMessage('Zagrałeś ' + PlayerMove + '. Komputer zagrał ' + computerMove + '! Wygrywasz!');
