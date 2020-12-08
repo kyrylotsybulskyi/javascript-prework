@@ -1,4 +1,4 @@
-// Papier, kamień, nożyce - stałe odpowiedzi
+// Papier, kamień, nożyce - stałe ruchy
 var computerMove, PlayerMove;
 PlayerMove = 'papier';
 computerMove = 'kamień';
@@ -9,7 +9,7 @@ var randomNumber;
 randomNumber = Math.floor(Math.random() * 9 + 11);
 printMessage('Wylosowana liczba to: ' + randomNumber);
 
-//Papier, kamień, nożyce - łosowe odpowiedzi komputera
+//Papier, kamień, nożyce - łosowe ruchy komputera
 
 var computerMove, randomNumber;
 randomNumber = Math.floor(Math.random() * 3 + 1);
@@ -23,3 +23,19 @@ if (randomNumber == '1') {
 }
 printMessage('Mój ruch: ' + computerMove);
 computerMove = 'papier';
+
+//Papier, kamień, nożyce - ruchy gracza
+
+var playerMove, playerInput;
+playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
+console.log('Wpisana odpowiedź to: ' + playerInput);
+if (playerInput == '1') {
+  playerMove = 'kamień';
+} else if (playerInput == '2') {
+  playerMove = 'papier';
+} else if (playerInput == '3') {
+  playerMove = 'nożyce';
+} else {
+  playerMove = 'Myślę że chciałeś powiedzieć 1.' + ' kamień';
+}
+printMessage('Twój ruch: ' + playerMove);
