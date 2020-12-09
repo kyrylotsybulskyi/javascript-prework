@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
 	"version": 3,
 	"file": "style.css",
@@ -7,3 +8,6 @@
 	"names": [],
 	"mappings": ""
 }
+=======
+{"version":3,"sources":["../sass/style.scss"],"names":[],"mappings":"AAAA;EACI,gBAAe;CAClB","file":"style.css"}
+>>>>>>> 0499cbd5acab6f4678543daeb4934fbe794cea30
