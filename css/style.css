@@ -12,19 +12,15 @@ h1, h2, h3 {
 
 p {
   width: 47%;
-  margin: 3% auto;
+  margin: 1% auto;
   white-space: wrap;
   text-align: justify;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 .symbols {
-  /*margin: 3% auto;
-    width: 47%;
-    text-align: justify;*/
   white-space: pre-line;
-  line-height: 1.7;
-  /*border: 2px solid red;*/
+  line-height: 1.5;
 }
 
 div {
