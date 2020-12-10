@@ -2,14 +2,26 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Kamień, papier, nożyce</title>
+	<title>Papier, Kamień, Nożyce</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="container">
+		<h1>Papier, Kamień, Nożyce</h1>
+		<h2>Zasady gry</h2>
+		<p>	Gra składa się z kolejnych tur. W każdej turze grać musi nacisnąć jeden z trzech guzików: Papier, Kamień lub Nożyce. 
+		Po naciśnięcu guzika komputer wyświetli wynik oraz swój ruch. Z każdym zwyczeństwem gracz otrzymuje jeden punkt. 
+		W przypadku gdy naciśnięty guzik oraz ruch komputer ma takie same znaczenie następuje remis – punktu brak. </p>
+			
+		<h3>Oto hierarchia symboli:</h3>
+		<p class="symbols"><strong>Nożyce</strong> są silniejsze od papieru, ponieważ go tną, 
+		<strong>Kamień</strong> jest silniejszy od nożyc, ponieważ je tępi,
+		<strong>Papier</strong> jest silniejszy od kamienia, ponieważ go owija.
+		Gracz, który pierwszy uzyska umówioną wcześniej ilość punktów, wygrywa partię.
+		</p>
 		<div id="buttons">
-			<button id="button-rock">Kamień</button>
 			<button id="button-paper">Papier</button>
+			<button id="button-rock">Kamień</button>			
 			<button id="button-scissors">Nożyce</button>
 		</div>
         <div id="messages"></div>        

@@ -1,4 +1,54 @@
 body {
+  margin-top: 15%;
   font-size: 20px;
+  background-color: dimgray;
+  color: #ffffff;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: yellowgreen;
+}
+
+p {
+  width: 47%;
+  margin: 3% auto;
+  white-space: wrap;
+  text-align: justify;
+  margin-bottom: 5%;
+}
+
+.symbols {
+  margin: 3% auto;
+  width: 47%;
+  text-align: justify;
+  white-space: pre-line;
+  line-height: 1.7;
+  /*border: 2px solid red;*/
+}
+
+div {
+  text-align: center;
+}
+
+#buttons {
+  margin-left: 70px;
+}
+
+button {
+  margin-right: 70px;
+  /*border-radius: 50%;    */
+  background-color: green;
+  color: white;
+  padding: 14px;
+  font-size: 24px;
+  margin-bottom: 5%;
+  border: 2px solid yellow;
+}
+
+button:hover {
+  /*border-radius: 50%;    */
+  background-color: #007b00;
+  border: 2px solid #ff0015;
 }
 /*# sourceMappingURL=style.css.map */
