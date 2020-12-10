@@ -1,5 +1,5 @@
 body {
-  margin-top: 5%;
+  margin-top: 1%;
   font-size: 20px;
   background-color: dimgray;
   color: #ffffff;
@@ -19,9 +19,9 @@ p {
 }
 
 .symbols {
-  margin: 3% auto;
-  width: 47%;
-  text-align: justify;
+  /*margin: 3% auto;
+    width: 47%;
+    text-align: justify;*/
   white-space: pre-line;
   line-height: 1.7;
   /*border: 2px solid red;*/
@@ -37,18 +37,18 @@ div {
 
 button {
   margin-right: 70px;
-  /*border-radius: 50%;    */
+  border-radius: 5%;
   background-color: green;
   color: white;
   padding: 14px;
   font-size: 24px;
   margin-bottom: 5%;
-  border: 2px solid yellow;
+  border: 5px solid yellow;
 }
 
 button:hover {
   /*border-radius: 50%;    */
-  background-color: #007b00;
-  border: 2px solid #ff0015;
+  background-color: #004d00;
+  border: 5px solid orange;
 }
 /*# sourceMappingURL=style.css.map */

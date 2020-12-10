@@ -55,11 +55,14 @@ function displayResult(argPlayerMove, argComputerMove) {
     ComputerNumber = ComputerNumber + 1;
   }
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
-  printMessage('Twoje punkty ' + PlayerNumber + ', -  Moje punkty  ' + ComputerNumber);
+  printResult('Twoje punkty to ' + PlayerNumber + ' -  ' + ComputerNumber + ' to moje punkty');
   if (ResultNumber < 5) {
     printMessage('Gramy 5 rund. Jeszcze zostało '  + (5 - ResultNumber) + ' rund' );
   }  else {
-    printMessage('Na dzisiaj starczy :) ')
+    printMessage('Na dzisiaj starczy :) ');
+    PlayerNumber = 0;
+    ComputerNumber = 0;
+    ResultNumber = 0;
   }
 }
 
