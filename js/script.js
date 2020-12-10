@@ -1,10 +1,13 @@
 // Papier, kamień, nożyce
 
-var argButtonName, BattonPaper, BattonRock, BattonScissors, buttonTest;
+var argButtonName, BattonPaper, BattonRock, BattonScissors, buttonTest, PlayerNumber, ComputerNumber, ResultNumber;
 
 /**
  * Describe this function...
  */
+ResultNumber = 0;
+PlayerNumber = 0;
+ComputerNumber = 0;
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
@@ -14,10 +17,13 @@ function buttonClicked(argButtonName) {
 /**
  * Describe this function...
  */
+
 function getMoveName(argMoveId) {
   console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
+  ResultNumber = ResultNumber + 1;
+  console.log(ResultNumber + ' zagrano rund');
   if (argMoveId == 1) {
-    return 'kamień';
+    return 'kamień';    
   } else if (argMoveId == 2) {
     return 'papier';
   } else if (argMoveId == 3) {
@@ -35,17 +41,28 @@ function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
   if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
     printMessage('Wygrywasz!');
+    PlayerNumber = PlayerNumber + 1;
   } else if (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') {
     printMessage('Wygrywasz!');
+    PlayerNumber = PlayerNumber + 1;
   } else if (argPlayerMove == 'nożyce' && argComputerMove == 'papier') {
     printMessage('Wygrywasz!');
+    PlayerNumber = PlayerNumber + 1;
   } else if (argPlayerMove == argComputerMove) {
     printMessage('Remis');
   } else {
     printMessage('Przegrywasz :(');
+    ComputerNumber = ComputerNumber + 1;
   }
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+  printMessage('Twoje punkty ' + PlayerNumber + ', -  Moje punkty  ' + ComputerNumber);
+  if (ResultNumber < 5) {
+    printMessage('Gramy 5 rund. Jeszcze zostało '  + (5 - ResultNumber) + ' rund' );
+  }  else {
+    printMessage('Na dzisiaj starczy :) ')
+  }
 }
+
 console.log('wybór ruchu gracza to: ' + playerInput);
 playerMove = argButtonName;
 console.log('ruch gracza to: ' + playerMove);
@@ -54,10 +71,9 @@ console.log('wylosowana liczba to: ' + randomNumber);
 computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
+
+
 }
-
-
-//buttonTest.addEventListener('click', function(){ buttonClicked('Test button'); });
 BattonRock = document.getElementById('button-rock');
 BattonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
 BattonPaper = document.getElementById('button-paper');
