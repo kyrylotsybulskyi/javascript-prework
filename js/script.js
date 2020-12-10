@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 // Papier, kamień, nożyce
 
 var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
@@ -48,4 +46,3 @@ console.log('wylosowana liczba to: ' + randomNumber);
 computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
->>>>>>> 0499cbd5acab6f4678543daeb4934fbe794cea30
